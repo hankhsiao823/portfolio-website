@@ -1,25 +1,60 @@
 {
   "home": {
     "title": {
-      "hello":"你好,",
-      "name":"我是Hank Hsiao.",
-      "skill":"我是一位前端開發人員."
-    },
-    "listTitle": {
-      "customer": "客戶",
-      "company": "公司",
-      "work": "工作",
-      "meeting": "會議",
-      "event": "事件／活動",
-      "business": "商機",
-      "consumption": "消費",
-      "coupon": "點券",
-      "message": "行銷簡訊",
-      "mail": "行銷郵件",
-      "contact": "聯繫腳本",
-      "note": "記事本",
-      "announcement": "佈告欄",
-      "tag": "標籤"
+      "hello":"你好,   ",
+      "name":"我是Hank Hsiao.  ",
+      "skill":"我是一位前端開發人員.               "
     }
+  },
+  "about": {
+    "introduce": {
+      "hello":"我是來自台灣的前端開發者，對於創建美觀且易於使用的網站覺得很有趣。",
+      "skill":"我對整個前端開發感興趣，並且開始接觸後端，並且正在朝著全端開發人員的方向努力。",
+      "idea":"我相信只要你努力，沒有什麼是做不到的。"
+    },
+    "button":"聯絡方式"
+  },
+  "works":{
+    "weather":{
+      "title":"天氣網站",
+      "introduce":"查詢當地天氣，使用js獲取經緯度，然後連結OpenWeatherMap和GoogleMap的API來取得天氣和所在的地區的地名，可配合當地時間早晚變換背景色。"
+    },
+    "colour":{
+      "title":"調色盤網站",
+      "introduce":"設定RGBA來調和顏色，可以複製出調和出來的結果，有HEX和RGBA可以選擇。"
+    },
+    "photo":{
+      "title":"圖片網站",
+      "introduce":"用fetch去接Pexels API來展示圖片，可以使用關鍵字查詢相關圖片。"
+    },
+    "todo":{
+      "title":"備忘錄網站",
+      "introduce":"可以創建一個簡單的備忘清單。"
+    }
+  },
+  "contact":{
+    "title":"聯絡表單",
+    "name":{
+      "label":"姓名",
+      "placeholder":"請填寫你的姓名",
+      "error":"姓名必填"
+    },
+    "mail":{
+      "label":"信箱",
+      "placeholder":"請填寫你的信箱",
+      "error":"信箱必填",
+      "invalidError":"這是無效信箱"
+    },
+    "formTitle":{
+      "label":"標題",
+      "placeholder":"請填寫你要輸入的標題",
+      "error":"標題必填"
+    },
+    "content":{
+      "label":"內容",
+      "placeholder":"請填寫你要輸入的內容...",
+      "error":"內容必填"
+    },
+    "button":"送出"
   }
 }

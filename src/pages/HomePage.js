@@ -8,8 +8,7 @@ const homelogo = [
   "assets/images/homelogoblack.png",
   "assets/images/homelogowhite.png",
 ];
-// const titlebox = ["Hello,", `I'm Hank Hsiao.`, "I'm a front-end developer."];
-// const titlebox = ["你好,", `我是Hank Hsiao.`, "我是一位前端開發人員."];
+
 const Hlogos = keyframes`
   0%{
     transform: rotate(-2deg);

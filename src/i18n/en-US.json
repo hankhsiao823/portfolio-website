@@ -4,22 +4,57 @@
       "hello":"Hello,",
       "name":"I'm Hank Hsiao.",
       "skill":"I'm a front-end developer."
-    },
-    "listTitle": {
-      "customer": "客戶",
-      "company": "公司",
-      "work": "工作",
-      "meeting": "會議",
-      "event": "事件／活動",
-      "business": "商機",
-      "consumption": "消費",
-      "coupon": "點券",
-      "message": "行銷簡訊",
-      "mail": "行銷郵件",
-      "contact": "聯繫腳本",
-      "note": "記事本",
-      "announcement": "佈告欄",
-      "tag": "標籤"
     }
+  },
+  "about": {
+    "introduce": {
+      "hello":"I'm a front-end developer in Taiwan. I love creating websites that are simple to use.",
+      "skill":"I'm interested in the whole frontend stack and am starting to touch the backend as well and am working my way towards a full-stack developer.",
+      "idea":"I believe that as long as you work hard, there is nothing you can't do."
+    },
+    "button":"Contact"
+  },
+  "works":{
+    "weather":{
+      "title":"Weather WebSite",
+      "introduce":"Querying the local weather, use js to get the latitude and longitude, and then fetch API of OpenWeatherMap and GoogleMap to get the weather and area"
+    },
+    "colour":{
+      "title":"Colour Palette WebSite",
+      "introduce":"Set RGBA to reconcile the color, you can copy the reconciled result, there are HEX and RGBA to choose."
+    },
+    "photo":{
+      "title":"Photo Website",
+      "introduce":"Use fetch to connect to the Pexels API to display pictures, and you can use keywords to query related pictures."
+    },
+    "todo":{
+      "title":"Todo-list WebSite",
+      "introduce":"A simple cheat list can be created."
+    }
+  },
+  "contact":{
+    "title":"Contact Me",
+    "name":{
+      "label":"Name",
+      "placeholder":"insert your name",
+      "error":"Name is required"
+    },
+    "mail":{
+      "label":"Mail",
+      "placeholder":"insert your Email",
+      "error":"Mail is required",
+      "invalidError":"invalid email address"
+    },
+    "formTitle":{
+      "label":"Title",
+      "placeholder":"write your title",
+      "error":"Title is required"
+    },
+    "content":{
+      "label":"content",
+      "placeholder":"write your content...",
+      "error":"Content is required"
+    },
+    "button":"Submit"
   }
 }

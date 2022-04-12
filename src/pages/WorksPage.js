@@ -13,50 +13,50 @@ import { useTheme, alpha } from "@mui/material/styles";
 import { motion } from "framer-motion";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkIcon from "@mui/icons-material/Link";
+import { useTranslation } from "react-i18next";
 
-const worksArray = [
-  {
-    name: "Weather WebSite",
-    description:
-      "Querying the local weather, use js to get the latitude and longitude, and then fetch API of OpenWeatherMap and GoogleMap to get the weather and area",
-    img: "assets/images/weather-web.png",
-    href: "https://hankhsiao823.github.io/weather-web/",
-    github: "https://github.com/hankhsiao823/weather-web",
-    tools:'#reactjs #api #material ui'
-  },
-  {
-    name: "Colour Palette WebSite",
-    description:
-      "調色盤網站，設定RGBA來調和顏色，可以複製出調和出來的結果，有HEX和RGBA可以選擇",
-    img: "assets/images/colour-palette-web.png",
-    href: "https://hankhsiao823.github.io/colour-palette/",
-    github: "https://github.com/hankhsiao823/colour-palette",
-    tools:'#reactjs #material ui'
-  },
-  {
-    name: "Photo Website",
-    description:
-      "用fetch去接Pexels API來展示圖片，可以使用關鍵字查詢相關圖片。",
-    img: "assets/images/photo-web.png",
-    href: "https://hankhsiao823.github.io/photo-website/",
-    github: "https://github.com/hankhsiao823/photo-website",
-    tools:'#reactjs #api #scss #react-router'
-  },
-  {
-    name: "todo-list WebSite",
-    description:
-      "一個簡單的備忘清單",
-    img: "assets/images/todo-list-web.png",
-    href: "https://hankhsiao823.github.io/todo-list/",
-    github: "https://github.com/hankhsiao823/todo-list",
-    tools:'#html #css #js'
-  },
-];
+
 
 const WorksPage = () => {
   const theme = useTheme();
   const [width, setWidth] = useState(null);
   const carousel = useRef();
+  const { t } = useTranslation();
+
+  const worksArray = [
+    {
+      name: t("works.weather.title"),
+      description:t("works.weather.introduce"),
+      img: "assets/images/weather-web.png",
+      href: "https://hankhsiao823.github.io/weather-web/",
+      github: "https://github.com/hankhsiao823/weather-web",
+      tools:'#reactjs #api #material ui'
+    },
+    {
+      name: t("works.colour.title"),
+      description:t("works.colour.introduce"),
+      img: "assets/images/colour-palette-web.png",
+      href: "https://hankhsiao823.github.io/colour-palette/",
+      github: "https://github.com/hankhsiao823/colour-palette",
+      tools:'#reactjs #material ui'
+    },
+    {
+      name: t("works.photo.title"),
+      description:t("works.photo.introduce"),
+      img: "assets/images/photo-web.png",
+      href: "https://hankhsiao823.github.io/photo-website/",
+      github: "https://github.com/hankhsiao823/photo-website",
+      tools:'#reactjs #api #scss #react-router'
+    },
+    {
+      name: t("works.todo.title"),
+      description:t("works.todo.introduce"),
+      img: "assets/images/todo-list-web.png",
+      href: "https://hankhsiao823.github.io/todo-list/",
+      github: "https://github.com/hankhsiao823/todo-list",
+      tools:'#html #css #js'
+    },
+  ];
 
   const variant = {
     hidden: { x: -100, opacity: 0 },

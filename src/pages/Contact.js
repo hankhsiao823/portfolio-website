@@ -11,6 +11,7 @@ import { motion } from "framer-motion";
 import { useTheme, alpha } from "@mui/material/styles";
 import { useForm, Controller } from "react-hook-form";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
 
 const contactArray = [
   {
@@ -110,6 +111,7 @@ const contactForm = {
 
 const Contact = () => {
   const theme = useTheme();
+  const { t } = useTranslation();
   const { handleSubmit, reset, control } = useForm();
   const sendEmail = (data, e) => {
     e.preventDefault();
@@ -214,7 +216,7 @@ const Contact = () => {
           >
             <Container sx={{ maxWidth: { xs: "lg", sm: "sm" } }}>
               <Typography variant="h2" sx={{ mb: 3 }}>
-                Contact Me
+                {t("contact.title")}
               </Typography>
               <Box
                 display="flex"
@@ -224,7 +226,7 @@ const Contact = () => {
                 <Controller
                   name="name"
                   control={control}
-                  rules={{ required: "Name is required" }}
+                  rules={{ required: t("contact.name.error") }}
                   render={({ field: { onChange }, fieldState: { error } }) => (
                     <Box sx={{ mb: 3, width: { xs: "100%", sm: "45%" } }}>
                       <TextField
@@ -232,9 +234,9 @@ const Contact = () => {
                         onChange={onChange}
                         error={error}
                         fullWidth
-                        label="Name"
+                        label={t("contact.name.label")}
                         variant="outlined"
-                        placeholder="insert your name"
+                        placeholder={t("contact.name.placeholder")}
                         sx={{
                           background: alpha("#808080", 0.1),
                         }}
@@ -249,10 +251,10 @@ const Contact = () => {
                   name="mail"
                   control={control}
                   rules={{
-                    required: "Mail is required",
+                    required: t("contact.mail.error"),
                     pattern: {
                       value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                      message: "invalid email address",
+                      message: t("contact.mail.invalidError"),
                     },
                   }}
                   render={({ field: { onChange }, fieldState: { error } }) => (
@@ -261,9 +263,9 @@ const Contact = () => {
                         name="mail"
                         onChange={onChange}
                         error={error}
-                        label="Mail"
+                        label={t("contact.mail.label")}
                         variant="outlined"
-                        placeholder="insert your Email"
+                        placeholder={t("contact.mail.placeholder")}
                         fullWidth
                         sx={{
                           background: alpha("#808080", 0.1),
@@ -279,7 +281,7 @@ const Contact = () => {
               <Controller
                 name="title"
                 control={control}
-                rules={{ required: "Title is required" }}
+                rules={{ required: t("contact.formTitle.error") }}
                 render={({ field: { onChange }, fieldState: { error } }) => (
                   <Box mb={3}>
                     <TextField
@@ -287,9 +289,9 @@ const Contact = () => {
                       onChange={onChange}
                       error={error}
                       fullWidth
-                      label="Title"
+                      label={t("contact.formTitle.label")}
                       variant="outlined"
-                      placeholder="write your title"
+                      placeholder={t("contact.formTitle.placeholder")}
                       sx={{
                         background: alpha("#808080", 0.1),
                       }}
@@ -303,7 +305,7 @@ const Contact = () => {
               <Controller
                 name="content"
                 control={control}
-                rules={{ required: "Content is required" }}
+                rules={{ required:t("contact.content.error")}}
                 render={({ field: { onChange }, fieldState: { error } }) => (
                   <Box mb={3}>
                     <TextField
@@ -313,9 +315,9 @@ const Contact = () => {
                       multiline
                       rows={10}
                       fullWidth
-                      label="Content"
+                      label={t("contact.content.label")}
                       variant="outlined"
-                      placeholder="write your content..."
+                      placeholder={t("contact.content.placeholder")}
                       sx={{
                         background: alpha("#808080", 0.1),
                       }}
@@ -337,7 +339,7 @@ const Contact = () => {
                   color: "#fff",
                 }}
               >
-                Submit
+                {t("contact.button")}
               </Button>
             </Container>
           </motion.form>

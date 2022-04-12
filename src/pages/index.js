@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Darkmode from "../component/DarkModeComponent";
 import LanguageComponent from "../component/LanguageComponent";
 import Nav from "../component/NavComponent";
