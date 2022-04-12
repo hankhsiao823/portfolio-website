@@ -17,6 +17,8 @@ const Logo = () => {
     color: "#000000",
     pointerEvents: " none",
     animation: `${Applogospin} infinite 20s linear`,
+    width: "64px",
+    height: "64px",
   };
 
   const logoAnimation = {
