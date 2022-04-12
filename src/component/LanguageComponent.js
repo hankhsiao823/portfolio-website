@@ -29,6 +29,9 @@ const LanguageComponent = () => {
   const handleClick = (e) => {
     setAnchorEl(e.currentTarget);
   };
+  const close = () => {
+    setAnchorEl(null);
+  };
   const handleClose = (props) => {
     setLang(props);
     setAnchorEl(null);
@@ -45,7 +48,7 @@ const LanguageComponent = () => {
       <IconButton onClick={handleClick}>
         <LanguageIcon sx={{ fontSize: "2rem" }} />
       </IconButton>
-      <Menu anchorEl={anchorEl} open={open} onClose={handleClose}>
+      <Menu anchorEl={anchorEl} open={open} onClose={close}>
         <MenuItem onClick={() => handleClose("zh-TW")}>中文</MenuItem>
         <MenuItem onClick={() => handleClose("en-US")}>English</MenuItem>
       </Menu>
