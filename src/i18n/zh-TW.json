@@ -1,0 +1,25 @@
+{
+  "home": {
+    "title": {
+      "hello":"你好,",
+      "name":"我是Hank Hsiao.",
+      "skill":"我是一位前端開發人員."
+    },
+    "listTitle": {
+      "customer": "客戶",
+      "company": "公司",
+      "work": "工作",
+      "meeting": "會議",
+      "event": "事件／活動",
+      "business": "商機",
+      "consumption": "消費",
+      "coupon": "點券",
+      "message": "行銷簡訊",
+      "mail": "行銷郵件",
+      "contact": "聯繫腳本",
+      "note": "記事本",
+      "announcement": "佈告欄",
+      "tag": "標籤"
+    }
+  }
+}
