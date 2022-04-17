@@ -3,6 +3,7 @@ import { useTheme } from "@mui/material/styles";
 import { Box, Typography, keyframes } from "@mui/material";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import scrollTo from "../component/scrollTo";
 
 const homelogo = [
   "assets/images/homelogoblack.png",
@@ -119,7 +120,7 @@ const HomePage = () => {
       />
       <Box
         component="a"
-        href="#about"
+        onClick={()=>scrollTo("about")}
         sx={{
           position: "absolute",
           height: "3rem",
