@@ -6,38 +6,38 @@ import { motion, useViewportScroll, useTransform } from "framer-motion";
 const skillArray = [
   {
     img: "assets/svg/html.svg",
-    top: { xs: "150px", sm: "230px" },
+    top: { xs: "150px", sm: "180px" },
     left: { xs: `calc(50% - 80px)`, sm: `calc(50% - 185px)` },
     name: "HTML",
   },
   {
     img: "assets/svg/css.svg",
-    top: { xs: "150px", sm: "230px" },
+    top: { xs: "150px", sm: "180px" },
     left: { xs: `calc(50% - 25px)`, sm: `calc(50% - 110px)` },
     name: "CSS",
   },
   {
     img: "assets/svg/javascript.svg",
-    top: { xs: "150px", sm: "230px" },
+    top: { xs: "150px", sm: "180px" },
     left: { xs: `calc(50% + 30px)`, sm: `calc(50% - 35px)` },
     name: "JS",
   },
   {
     img: "assets/svg/logo.svg",
-    top: { xs: "150px", sm: "230px" },
+    top: { xs: "150px", sm: "180px" },
     left: { xs: `calc(50% + 80px)`, sm: `calc(50% + 40px)` },
     name: "Reactjs",
   },
   {
     img: "assets/svg/nodejs.svg",
 
-    top: { xs: "218px", sm: "330px" },
+    top: { xs: "218px", sm: "280px" },
     left: { xs: `calc(50% - 80px)`, sm: `calc(50% - 185px)` },
     name: "Nodejs",
   },
   {
     img: "assets/svg/mongodb.svg",
-    top: { xs: "218px", sm: "330px" },
+    top: { xs: "218px", sm: "280px" },
     left: { xs: `calc(50% - 25px)`, sm: `calc(50% - 110px)` },
     name: "Mongodb",
   },
@@ -58,13 +58,13 @@ const skillArray = [
 const uiArray = [
   {
     img: "assets/images/mui.png",
-    top: { xs: "315px", sm: "460px" },
+    top: { xs: "315px", sm: "410px" },
     left: { xs: `calc(50% - 80px)`, sm: `calc(50% - 185px)` },
     name: "MUI",
   },
   {
     img: "assets/svg/bootstrap.svg",
-    top: { xs: "315px", sm: "460px" },
+    top: { xs: "315px", sm: "410px" },
     left: { xs: `calc(50% - 25px)`, sm: `calc(50% - 110px)` },
     name: "Bootstrap",
   },
@@ -73,13 +73,13 @@ const uiArray = [
 const toolsArray = [
   {
     img: "assets/svg/github.svg",
-    top: { xs: "415px", sm: "590px" },
+    top: { xs: "415px", sm: "540px" },
     left: { xs: `calc(50% - 80px)`, sm: `calc(50% - 185px)` },
     name: "Github",
   },
   {
     img: "assets/svg/vscode.svg",
-    top: { xs: "415px", sm: "590px" },
+    top: { xs: "415px", sm: "540px" },
     left: { xs: `calc(50% - 25px)`, sm: `calc(50% - 110px)` },
     name: "VScode",
   },
@@ -92,11 +92,11 @@ const SkillPage = () => {
 
   const noHandOpacity = useTransform(
     scrollYProgress,
-    [0.22, 0.25, 0.65, 0.75],
+    [0.1, 0.25, 0.65, 0.75],
     [0, 1, 1, 0]
   );
   const noHandrotate = useTransform(scrollYProgress, [0.3, 0.4], [-90, 0]);
-  const noHandScale = useTransform(scrollYProgress, [0.25, 0.4], [7, 1]);
+  const noHandScale = useTransform(scrollYProgress, [0.05, 0.4], [7, 1]);
   const noHandx = useTransform(scrollYProgress, [0.35, 0.4], [200, 0]);
 
   const handOpacity = useTransform(
@@ -209,7 +209,7 @@ const SkillPage = () => {
         <Typography
           sx={{
             position: "fixed",
-            top: { xs: "120px", sm: "200px" },
+            top: { xs: "120px", sm: "150px" },
             transform: "translate(-50%,0%)",
             left: { xs: `calc(50% - 70px)`, sm: `calc(50% - 170px)` },
             zIndex: -1,
@@ -248,7 +248,7 @@ const SkillPage = () => {
         <Typography
           sx={{
             position: "fixed",
-            top: { xs: "290px", sm: "430px" },
+            top: { xs: "290px", sm: "380px" },
             transform: "translate(-50%,0%)",
             left: { xs: `calc(50% - 70px)`, sm: `calc(50% - 170px)` },
             zIndex: -1,
@@ -287,7 +287,7 @@ const SkillPage = () => {
         <Typography
           sx={{
             position: "fixed",
-            top: { xs: "385px", sm: "560px" },
+            top: { xs: "385px", sm: "510px" },
             transform: "translate(-50%,0%)",
             left: { xs: `calc(50% - 82px)`, sm: `calc(50% - 185px)` },
             zIndex: -1,
