@@ -152,7 +152,7 @@ const BeginPage = ({ setToggle }) => {
         animate={state && "animate"}
         sx={{
           position: "absolute",
-          top: "70%",
+          top: "75%",
           left: "50%",
           transform: "translate(-50%,-50%)",
           width: "250px",

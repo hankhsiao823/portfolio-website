@@ -39,7 +39,7 @@ const AboutPage = () => {
             fontSize: { xs: "5rem", md: "10rem" },
             position: "absolute",
             top: 50,
-            left: 100,
+            left: { xs: 20, md: 100 },
             color: alpha(theme.palette.text.disabled, 0.1),
           },
         }}

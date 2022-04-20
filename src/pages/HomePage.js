@@ -105,7 +105,8 @@ const HomePage = () => {
         whileInView={{
           opacity: 1,
           transition: {
-            delay: 5.5,
+            // delay: 5.5,
+            delay: 1,
             duration: 0.5,
           },
         }}
@@ -122,6 +123,7 @@ const HomePage = () => {
         component="a"
         onClick={()=>scrollTo("about")}
         sx={{
+          display:{xs:'none',sm:'block'},
           position: "absolute",
           height: "3rem",
           width: "2rem",
